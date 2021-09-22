@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StokTakipDBModelStoreContainer" CdmEntityContainer="StokTakipDBEntities">
+    <EntitySetMapping Name="KATEGORI">
+      <EntityTypeMapping TypeName="StokTakipDBModel.KATEGORI">
+        <MappingFragment StoreEntitySet="KATEGORI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KategoriAD" ColumnName="KategoriAD" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MUSTERI">
+      <EntityTypeMapping TypeName="StokTakipDBModel.MUSTERI">
+        <MappingFragment StoreEntitySet="MUSTERI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MusteriAD" ColumnName="MusteriAD" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SATIS">
+      <EntityTypeMapping TypeName="StokTakipDBModel.SATIS">
+        <MappingFragment StoreEntitySet="SATIS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="SatisMiktar" ColumnName="SatisMiktar" />
+          <ScalarProperty Name="SatisFiyat" ColumnName="SatisFiyat" />
+          <ScalarProperty Name="SatisTarih" ColumnName="SatisTarih" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="URUN">
+      <EntityTypeMapping TypeName="StokTakipDBModel.URUN">
+        <MappingFragment StoreEntitySet="URUN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
